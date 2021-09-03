@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# 💼 포트폴리오 만들기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FE 개발자를 준비하면서, 포트폴리오 페이지를 만들려고 합니다.
 
-## Available Scripts
+포트폴리오 페이지는 개발자라면 누구나 사용하는 vscode 에디터에 영감을 받아 vscode 에디터 디자인을 참고한 스타일로 포트폴리오 페이지를 구현하고자 합니다.
 
-In the project directory, you can run:
+저는 많은 프로젝트를 진행하지 않고 하나의 프로젝트를 가지고 계속해서 기능을 추가하는 형식의 프로젝트를 진행하다보니, 제시할 프로젝트가 적습니다. 그래서 인상에 남는 포트폴리오라도 보여드리고 싶어 흥미로운 디자인의 포트폴리오를 만들고자 합니다.
 
-### `npm start`
+일단은, 포트폴리오를 목적으로 만들지만 더 확장시켜 나중에는 해당 스타일을 블로그로 만들려고 합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Visual Raccoon Code
 
-### `npm test`
+visual studio code의 디자인을 아이디어로 필명인 RaccoonCode(라쿤코드)를 접목하여 Visual Raccoon Code (vrcode)를 제목으로 정하였습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
 
-### `npm run build`
+## 사용할 기술
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+포트폴리오 페이지의 경우 정적인 페이지이기 때문에, server 구성 없이 단순히 client만 만들어서 Netlify로 배포하고자 합니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React, CRA
+- Ant Design
+- Scss (sass는 node-sass 보다 차후에 dart-sass 지원만 할 예정이기에 기본 sass로 채택)
+- Netlify
