@@ -1,0 +1,50 @@
+@import '../../styles/_variables.scss';
+
+.side_bar {
+	background-color: $side_bar_color;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@media screen and (max-width: 900px) {
+		display: none;
+	}
+
+	.side_bar_outline {
+		@include header_text;
+		font-size: 0.85rem;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+	}
+
+	.tab_name_cntr {
+		height: $tab_height;
+		padding: 0 20px;
+		justify-content: space-between;
+
+		.tab_name {
+			height: 100%;
+			line-height: 35px;
+			margin-left: 3px;
+		}
+
+		& > .icon {
+			font-size: 1.2rem;
+		}
+	}
+
+	.tab_item_cntr {
+		height: $tab_item_height;
+		gap: 5px;
+		padding: 0 5px;
+		border-top: solid 0.1rem $side_nav_color;
+		color: $default_text_color;
+	}
+
+	.active {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+}
