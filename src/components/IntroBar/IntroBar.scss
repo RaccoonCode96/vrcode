@@ -1,0 +1,11 @@
+@import '../../styles/_variables.scss';
+
+.sidebar_content {
+	width: 191px;
+	padding: 0 20px;
+	.sub {
+		@include header_text;
+		width: 100%;
+		padding: 0 0 0 7px;
+	}
+}
