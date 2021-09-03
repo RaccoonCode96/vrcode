@@ -1,0 +1,82 @@
+@import '../../styles/_variables.scss';
+
+.tabs {
+	height: 100%;
+	width: 100%;
+	background-color: $tab_bcg_color;
+	height: $tab_height;
+	display: flex;
+	align-items: center;
+	user-select: none;
+	position: fixed;
+	top: 30px;
+	left: 50px;
+	z-index: 1;
+	@media screen and (min-width: 900px) {
+		padding-left: 191px;
+	}
+
+	.tab_cntr {
+		display: flex;
+		height: 100%;
+		gap: 20px;
+		border: 1px solid #1e1e1e;
+		justify-content: space-between;
+		padding: 0 10px;
+		@media screen and (max-width: 546px) {
+			gap: 0;
+		}
+		@media screen and (max-width: 347px) {
+			padding: 0 5px;
+		}
+
+		.tab {
+			display: flex;
+			width: 100%;
+			align-items: center;
+
+			.title_type,
+			.tab_title {
+				color: $default_text_color;
+			}
+			.title_type {
+				@media screen and (max-width: 486px) {
+					display: none;
+				}
+			}
+			.icon {
+				width: 18px;
+				margin-right: 10px;
+				@media screen and (max-width: 366px) {
+					margin: 2px;
+				}
+				@media screen and (max-width: 297px) {
+					display: none;
+				}
+			}
+		}
+
+		.end {
+			display: flex;
+			align-items: center;
+			.dot {
+				margin: 0 5px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: $active_dot_color;
+				@media screen and (max-width: 317px) {
+					display: none;
+				}
+			}
+			.close {
+				margin-left: 5px;
+				color: $default_text_color;
+				font-size: 0.8rem;
+				@media screen and (max-width: 411px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
