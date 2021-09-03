@@ -1,0 +1,11 @@
+@mixin header_text {
+	font-size: 1rem;
+	font-weight: 400;
+	color: $oc-gray-5;
+	user-select: none;
+}
+
+@mixin default_btn {
+	border: none;
+	background-color: transparent;
+}
