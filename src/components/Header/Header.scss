@@ -1,0 +1,80 @@
+@use 'sass:math';
+@import '../../styles/_variables.scss';
+
+@function reactiveSize($index) {
+	@return 870px - (($index - 1) * 70px);
+}
+
+header {
+	margin: 0 auto;
+	background-color: $header_color;
+	height: 30px;
+	width: 100%;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1;
+
+	.btns {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	@for $i from 1 through 2 {
+		.end .header_btn:nth-child(#{$i}) {
+			@media screen and (max-width: 411px) {
+				display: none;
+			}
+		}
+	}
+
+	.reactive {
+		overflow: hidden;
+
+		.header_btn {
+			@for $i from 1 through 8 {
+				&:nth-child(#{9 - $i}) {
+					@media screen and (max-width: reactiveSize($i)) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.vscode_icon {
+		height: 20px;
+		margin: 3px 10px 3px 0;
+	}
+
+	.header_btn {
+		height: 30px;
+		flex-shrink: 0;
+		@include header_text;
+		font-size: 0.95rem;
+		font-weight: 500;
+		@include default_btn;
+		&:hover {
+			background-color: $oc-gray-7;
+		}
+	}
+
+	h1 {
+		@include header_text;
+		margin: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		font-size: 0.8rem;
+	}
+
+	.window_btn {
+		width: 40px;
+	}
+}
