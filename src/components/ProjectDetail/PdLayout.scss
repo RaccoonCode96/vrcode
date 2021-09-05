@@ -1,0 +1,76 @@
+@import '../../styles/_variables.scss';
+
+.pd_title {
+	margin-bottom: 0;
+}
+
+.pd_sub_title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.pds_cntr {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	.pd_image {
+		max-width: 450px;
+		width: 100%;
+		border-radius: 1%;
+		object-fit: cover;
+		margin-bottom: 10px;
+		&:hover {
+			object-fit: contain;
+		}
+		transition: 0.5s;
+	}
+	.pd_content {
+		max-width: 450px;
+		.pd_h2 {
+			font-weight: 700;
+		}
+	}
+}
+.pd_links {
+	display: flex;
+	gap: 10px;
+	.move_github {
+		font-size: 0.7rem;
+		font-weight: 600;
+		border: none;
+		border-radius: 10px;
+		padding: 3px 10px;
+		background-color: $oc-orange-7;
+		color: $oc-gray-9;
+		&:hover {
+			color: $oc-gray-1;
+		}
+		transition: 0.2s;
+	}
+
+	.move_blog {
+		font-size: 0.7rem;
+		font-weight: 600;
+		border: none;
+		border-radius: 10px;
+		padding: 3px 10px;
+		background-color: $oc-blue-7;
+		color: $oc-gray-9;
+		&:hover {
+			color: $oc-gray-1;
+			.blog_icon {
+				fill: $oc-gray-1;
+				transition: 0.2s;
+			}
+		}
+		transition: 0.2s;
+		.blog_icon {
+			width: 11px;
+			height: 11px;
+		}
+	}
+}
