@@ -1,40 +1,28 @@
-import {
-	DownOutlined,
-	EllipsisOutlined,
-	RightOutlined,
-} from '@ant-design/icons';
+import { useCallback } from 'react';
+import { useLocation } from 'react-router';
+import HomeSide from './HomeSide';
+import ProjectSide from './ProjectSide';
 import './SideBar.scss';
+import StudySide from './StudySide';
 
-const SideBar = ({ children }) => {
-	return (
-		<section className="side_bar">
-			<div className="active">
-				<div className="side_bar_outline tab_name_cntr">
-					<div className="tab_name">탐색기</div>
-					<EllipsisOutlined className="icon" />
-				</div>
-				<div className="side_bar_outline tab_item_cntr">
-					<RightOutlined />
-					열려 있는 편집기
-				</div>
-				<div className="side_bar_outline tab_item_cntr">
-					<DownOutlined />
-					PORTFOLIO
-				</div>
-				{children}
-			</div>
-			<div>
-				<div className="side_bar_outline tab_item_cntr">
-					<RightOutlined />
-					개요
-				</div>
-				<div className="side_bar_outline tab_item_cntr">
-					<RightOutlined />
-					타임라인
-				</div>
-			</div>
-		</section>
-	);
+const SideBar = ({ children, setInput, input }) => {
+	const { pathname } = useLocation();
+	const resSide = useCallback(() => {
+		if (pathname === '/') {
+			return <HomeSide>{children}</HomeSide>;
+		} else if (pathname.includes('/project')) {
+			return (
+				<ProjectSide setInput={setInput} input={input}>
+					{children}
+				</ProjectSide>
+			);
+		} else if (pathname === '/study') {
+			return <StudySide>{children}</StudySide>;
+		} else {
+			return <HomeSide>{children}</HomeSide>;
+		}
+	}, [pathname, children, input, setInput]);
+	return <section className="side_bar">{resSide()}</section>;
 };
 
 export default SideBar;
