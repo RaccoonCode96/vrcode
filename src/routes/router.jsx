@@ -2,8 +2,9 @@ import { BranchesOutlined } from '@ant-design/icons';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import Contact from './Contact';
-import Future from './Future';
 import Home from './Home';
+import Projects from './Projects';
+import Study from './Study';
 
 const AppRouter = () => {
 	return (
@@ -12,8 +13,11 @@ const AppRouter = () => {
 				<Header />
 				<Switch>
 					<Route exact path="/" component={Home} />
+					<Route exact path="/project" component={Projects} />
+					<Route path="/project/:title" component={Projects} />
+					<Route path="/study" component={Study} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/future" component={Future} />
+					<Route path="*" component={Home} />
 				</Switch>
 				<footer>
 					<span className="footer_branch">
