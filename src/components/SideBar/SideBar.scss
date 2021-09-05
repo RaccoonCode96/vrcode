@@ -1,6 +1,7 @@
 @import '../../styles/_variables.scss';
 
 .side_bar {
+	width: 200px;
 	background-color: $side_bar_color;
 	flex-grow: 1;
 	display: flex;
@@ -16,6 +17,22 @@
 		font-weight: 500;
 		display: flex;
 		align-items: center;
+
+		.extend_input {
+			background-color: #3c3c3c;
+			border: solid 1px transparent;
+			width: 100%;
+			margin-bottom: 10px;
+			&:focus {
+				outline: none;
+				border: solid 1px $oc-blue-8;
+			}
+		}
+	}
+
+	.extend_input_cntr {
+		padding: 0 10px;
+		justify-content: center;
 	}
 
 	.tab_name_cntr {
