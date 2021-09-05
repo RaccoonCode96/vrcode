@@ -6,14 +6,20 @@ export const Tab = ({ Icon, title, active, color, type, href }) => {
 		<a
 			href={href}
 			className="tab_cntr"
-			style={active && { backgroundColor: '#1e1e1e' }}
+			style={active ? { backgroundColor: '#1e1e1e' } : undefined}
 		>
 			<div className="tab">
 				<Icon className="icon" style={color && { color }} />
-				<span className="tab_title" style={active && { color: '#68C977' }}>
+				<span
+					className="tab_title"
+					style={active ? { color: '#68C977' } : undefined}
+				>
 					{title}
 				</span>
-				<span className="title_type" style={active && { color: '#68C977' }}>
+				<span
+					className="title_type"
+					style={active ? { color: '#68C977' } : undefined}
+				>
 					{type}
 				</span>
 			</div>
@@ -23,13 +29,22 @@ export const Tab = ({ Icon, title, active, color, type, href }) => {
 			</div>
 		</a>
 	) : (
-		<div className="tab_cntr" style={active && { backgroundColor: '#1e1e1e' }}>
+		<div
+			className="tab_cntr"
+			style={active ? { backgroundColor: '#1e1e1e' } : undefined}
+		>
 			<div className="tab">
 				<Icon className="icon" style={color && { color }} />
-				<span className="tab_title" style={active && { color: '#68C977' }}>
+				<span
+					className="tab_title"
+					style={active ? { color: '#68C977' } : undefined}
+				>
 					{title}
 				</span>
-				<span className="title_type" style={active && { color: '#68C977' }}>
+				<span
+					className="title_type"
+					style={active ? { color: '#68C977' } : undefined}
+				>
 					{type}
 				</span>
 			</div>
