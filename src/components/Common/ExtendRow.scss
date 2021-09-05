@@ -1,0 +1,15 @@
+@import '../../styles/_variables.scss';
+
+.extend_row {
+	display: flex;
+	padding: 0 10px;
+	margin-bottom: 15px;
+	color: $default_text_color;
+
+	.extend_content {
+		margin-left: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
