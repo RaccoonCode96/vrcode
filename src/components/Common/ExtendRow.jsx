@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import './ExtendRow.scss';
 
-const ExtendRow = ({ Icon, title, desc, style, input, url }) => {
+const ExtendRow = ({ Icon, title, desc, style, input, url, active }) => {
 	// 검색 기능 함수
 	const check = useCallback((userInput, title) => {
 		const input = userInput.trim().toLowerCase();
@@ -22,9 +22,16 @@ const ExtendRow = ({ Icon, title, desc, style, input, url }) => {
 
 	return (
 		check(input, title) && (
-			<Link to={`/project/${url}`} className="extend_row">
+			<Link
+				to={`/project/${url}`}
+				className="extend_row"
+				style={active ? { backgroundColor: '#2A2D2E' } : undefined}
+			>
 				<Icon style={style} />
-				<div className="extend_content">
+				<div
+					className="extend_content"
+					style={active ? { color: '#40A9FF' } : undefined}
+				>
 					<div>{title}</div>
 					<div>{desc}</div>
 				</div>
