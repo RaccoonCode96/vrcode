@@ -13,14 +13,14 @@
 	left: 50px;
 	z-index: 1;
 	@media screen and (min-width: 900px) {
-		padding-left: 191px;
+		padding-left: 200px;
 	}
 
 	.tab_cntr {
 		display: flex;
 		height: 100%;
 		gap: 20px;
-		border: 1px solid #1e1e1e;
+		border-right: 1px solid #1e1e1e;
 		justify-content: space-between;
 		padding: 0 10px;
 		@media screen and (max-width: 546px) {
