@@ -10,7 +10,10 @@ const ContentRow = ({ onClick, Arrow, Icon, title, active, color }) => {
 			<div className="content_row">
 				{Arrow ? <Arrow className="arrow" /> : <div className="space"></div>}
 				<Icon className="icon" style={color && { color, fontSize: '1.1rem' }} />
-				<span className="row_title" style={active && { color: '#68C977' }}>
+				<span
+					className="row_title"
+					style={active ? { color: '#68C977' } : undefined}
+				>
 					{title}
 				</span>
 			</div>
