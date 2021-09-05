@@ -13,10 +13,11 @@ import Tabs, { Tab } from '../components/Tabs/Tabs';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import useMoveTop from '../hooks/useMoveTop';
 
 const Projects = () => {
+	const { pathname } = useLocation();
 	const { title } = useParams();
 	const [input, setInput] = useState('');
 	useMoveTop(true);
@@ -31,6 +32,7 @@ const Projects = () => {
 							desc="인스타그램 클론"
 							input={input}
 							url="Racstagram_V2"
+							active={pathname === '/project/Racstagram_V2'}
 						/>
 						<ExtendRow
 							Icon={InstaV1}
@@ -38,6 +40,7 @@ const Projects = () => {
 							desc="인스타그램 클론"
 							input={input}
 							url="Racstagram_V1"
+							active={pathname === '/project/Racstagram_V1'}
 						/>
 						<ExtendRow
 							Icon={FormatPainterFilled}
@@ -46,6 +49,7 @@ const Projects = () => {
 							desc="그림판 사각툴"
 							input={input}
 							url="Paint-Up"
+							active={pathname === '/project/Paint-Up'}
 						/>
 						<ExtendRow
 							Icon={FieldTimeOutlined}
@@ -54,14 +58,19 @@ const Projects = () => {
 							desc="날씨,시간,ToDo"
 							input={input}
 							url="Romentum"
+							active={pathname === '/project/Romentum'}
 						/>
 					</SideBar>
 				</Navigation>
 			</aside>
 			<div className="main_container">
 				<Tabs>
-					<Link to="/project">
-						<Tab Icon={FileOutlined} title="Project" />
+					<Link to="/project" style={{ height: '100%' }}>
+						<Tab
+							Icon={FileOutlined}
+							title="Project"
+							active={pathname === '/project'}
+						/>
 					</Link>
 				</Tabs>
 				<main>{title ? <ProjectDetail /> : <Project />}</main>
