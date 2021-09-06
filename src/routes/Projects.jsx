@@ -6,6 +6,7 @@ import {
 import ExtendRow from '../components/Common/ExtendRow';
 import { ReactComponent as InstaV1 } from '../images/insta_out.svg';
 import { ReactComponent as InstaV2 } from '../images/insta_fill.svg';
+import { ReactComponent as Vscode } from '../images/vscode_icon.svg';
 import Project from '../components/Mains/Project';
 import Navigation from '../components/Navigation/Navigation';
 import SideBar from '../components/SideBar/SideBar';
@@ -41,6 +42,15 @@ const Projects = () => {
 							input={input}
 							url="Racstagram_V1"
 							active={pathname === '/project/Racstagram_V1'}
+						/>
+						<ExtendRow
+							Icon={Vscode}
+							title="VRCode"
+							desc="포트폴리오"
+							input={input}
+							url="VRCode"
+							active={pathname === '/project/VRCode'}
+							style={{ width: '50px', height: '50px' }}
 						/>
 						<ExtendRow
 							Icon={FormatPainterFilled}
