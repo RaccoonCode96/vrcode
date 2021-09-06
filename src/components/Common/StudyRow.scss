@@ -1,16 +1,35 @@
 @import '../../styles/_variables.scss';
 
-.study_item {
-	.study_name {
+.study_cntr {
+	.study_cntr_row {
 		display: flex;
-		gap: 10px;
-		.study_icon {
-			width: 30px;
-			height: 30px;
-		}
-		.link_icon {
-			width: 25px;
-			height: 25px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.study_item {
+			margin: 15px 0;
+			max-width: 300px;
+			.study_name {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				&:hover {
+					transform: scale(110%);
+					transition: 0.2s;
+				}
+				.study_icon {
+					width: 30px;
+					height: 30px;
+				}
+				.link_icon {
+					width: 25px;
+					height: 25px;
+				}
+			}
+			.study_desc_more {
+				font-weight: 600;
+				cursor: pointer;
+				margin-left: 5px;
+			}
 		}
 	}
 }
