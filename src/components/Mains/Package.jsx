@@ -16,9 +16,10 @@ import { ReactComponent as Graphql } from '../../images/graphql_icon.svg';
 import { ReactComponent as Apollo } from '../../images/apollo_client.svg';
 import { ReactComponent as TailWindCss } from '../../images/tailwindcss.svg';
 import { ReactComponent as NextJs } from '../../images/next-js.svg';
-import { AntDesignOutlined } from '@ant-design/icons';
+import { AppstoreAddOutlined, AntDesignOutlined } from '@ant-design/icons';
 import StackLabel from '../Common/StackLabel';
 import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 
 const Package = () => {
 	const fStacks = useMemo(
@@ -119,6 +120,12 @@ const Package = () => {
 						))}
 					</div>
 				</div>
+				<Link to={'/project'}>
+					<div className="move_to">
+						<AppstoreAddOutlined className="move_to_icon" />
+						Project 보러가기
+					</div>
+				</Link>
 			</div>
 		</article>
 	);
