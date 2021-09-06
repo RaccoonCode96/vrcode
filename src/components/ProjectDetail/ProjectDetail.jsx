@@ -7,6 +7,7 @@ import paint from '../../images/paint_app.gif';
 import PdLayout from './PdLayout';
 import useMoveTop from '../../hooks/useMoveTop';
 import todoList from '../../images/todo_list.png';
+import vrcode from '../../images/visual_raccoon_code.gif';
 
 const ProjectDetail = () => {
 	useMoveTop();
@@ -106,6 +107,23 @@ const ProjectDetail = () => {
 							['날씨 받아서 이모티콘으로 표현하기', 'blue'],
 						],
 						stacks: ['HTML', 'CSS', 'JS'],
+					};
+				case 'VRCode':
+					return {
+						mainTitle: 'VRCode',
+						subTitle: 'VScode 에디터 디자인으로 직접 만든 포트폴리오',
+						img: vrcode,
+						desc: 'Visual Studio Code 에디터 디자인으로 Scss, React를 통해서 직접 만들었습니다. 정적인 페이지임으로 재미를 주기 위해서 sidebar에 각페이지에 맞는 기능들을 nav로 넣었습니다. 개인 포트폴리오도 하나의 프로젝트로서 기능을 추가하면서 배운것이 많았습니다.',
+						github: 'https://github.com/RaccoonCode96/redux_racstagram',
+						tistory: 'https://goforit.tistory.com/category/Romentum',
+						functions: [
+							['개인용 포트폴리오'],
+							['모바일 환경 고려한 반응형 스타일', 'blue'],
+							['설명 더 보기 기능', 'blue'],
+							['Project 검색 기능 (Side Bar)', 'blue'],
+							['contact 이메일, 전화번호 클립보드 복사 기능', 'blue'],
+						],
+						stacks: ['React', 'SCSS', 'AntDesign'],
 					};
 				default:
 					return {
