@@ -7,6 +7,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	user-select: none;
 	@media screen and (max-width: 900px) {
 		display: none;
 	}
@@ -63,5 +64,45 @@
 		flex-grow: 1;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.study_side_item {
+		color: $default_text_color;
+		padding: 10px 20px;
+		.study_side_btn {
+			width: 100%;
+			font-size: 0.9rem;
+			border: none;
+			background-color: $oc-blue-9;
+			text-align: center;
+			cursor: pointer;
+			margin-bottom: 10px;
+			&:hover {
+				background-color: $oc-blue-8;
+			}
+		}
+
+		.study_side_btn_desc {
+			font-size: 0.9rem;
+		}
+	}
+
+	.contact_side {
+		display: flex;
+		flex-direction: column;
+		padding: 0 15px;
+		height: 100%;
+		margin-top: 100px;
+		gap: 20px;
+		position: relative;
+		.contact_side_desc {
+			color: $default_text_color;
+		}
+
+		.contact_side_spin {
+			position: absolute;
+			top: 32px;
+			left: 64px;
+		}
 	}
 }
