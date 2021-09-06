@@ -28,7 +28,7 @@ const PdLayout = ({
 						</a>
 						<a
 							href={tistory}
-							rel="noreferrer"
+							rel="noopener noreferrer"
 							target="_blank"
 							className="move_blog"
 						>
