@@ -1,5 +1,6 @@
 import { useCallback } from 'react';
 import { useLocation } from 'react-router';
+import ContactSide from './ContactSide';
 import HomeSide from './HomeSide';
 import ProjectSide from './ProjectSide';
 import './SideBar.scss';
@@ -18,6 +19,8 @@ const SideBar = ({ children, setInput, input }) => {
 			);
 		} else if (pathname === '/study') {
 			return <StudySide>{children}</StudySide>;
+		} else if (pathname === '/contact') {
+			return <ContactSide />;
 		} else {
 			return <HomeSide>{children}</HomeSide>;
 		}
