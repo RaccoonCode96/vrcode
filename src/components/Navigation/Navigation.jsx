@@ -64,19 +64,31 @@ const Navigation = ({ children }) => {
 					</Tooltip>
 				</label>
 
-				<input type="radio" name="side_nav" id="searchOutlined_btn" />
+				<input
+					checked={pathname === '/contact'}
+					onChange={() => {
+						onChange('/contact');
+					}}
+					type="radio"
+					name="side_nav"
+					id="searchOutlined_btn"
+				/>
 				<label htmlFor="searchOutlined_btn" className="side_nav_btn">
 					<Tooltip placement="right" color="#1E1E1E" title={'Contact'}>
 						<SearchOutlined className="side_icon" />
 					</Tooltip>
 				</label>
 
-				<input type="radio" name="side_nav" id="branchesOutlined_btn" />
-				<label htmlFor="branchesOutlined_btn" className="side_nav_btn">
+				<a
+					href="https://github.com/RaccoonCode96"
+					rel="noopener noreferrer"
+					className="side_nav_btn"
+					target="_blank"
+				>
 					<Tooltip placement="right" color="#1E1E1E" title={'Github'}>
 						<BranchesOutlined className="side_icon" />
 					</Tooltip>
-				</label>
+				</a>
 			</nav>
 			{children}
 		</>
