@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/vrcode/static/css/main.e37036d5.chunk.css",
-    "main.js": "/vrcode/static/js/main.4b6d8e47.chunk.js",
-    "main.js.map": "/vrcode/static/js/main.4b6d8e47.chunk.js.map",
+    "main.css": "/vrcode/static/css/main.0ae780eb.chunk.css",
+    "main.js": "/vrcode/static/js/main.45daa190.chunk.js",
+    "main.js.map": "/vrcode/static/js/main.45daa190.chunk.js.map",
     "runtime-main.js": "/vrcode/static/js/runtime-main.44e4354c.js",
     "runtime-main.js.map": "/vrcode/static/js/runtime-main.44e4354c.js.map",
     "static/css/2.786ae0dd.chunk.css": "/vrcode/static/css/2.786ae0dd.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.2d911ca1.chunk.js.map": "/vrcode/static/js/3.2d911ca1.chunk.js.map",
     "index.html": "/vrcode/index.html",
     "static/css/2.786ae0dd.chunk.css.map": "/vrcode/static/css/2.786ae0dd.chunk.css.map",
-    "static/css/main.e37036d5.chunk.css.map": "/vrcode/static/css/main.e37036d5.chunk.css.map",
+    "static/css/main.0ae780eb.chunk.css.map": "/vrcode/static/css/main.0ae780eb.chunk.css.map",
     "static/js/2.6c7de523.chunk.js.LICENSE.txt": "/vrcode/static/js/2.6c7de523.chunk.js.LICENSE.txt",
     "static/media/algoData_icon.4f0ec373.svg": "/vrcode/static/media/algoData_icon.4f0ec373.svg",
     "static/media/apollo_client.c581f602.svg": "/vrcode/static/media/apollo_client.c581f602.svg",
@@ -63,7 +63,7 @@
     "static/js/runtime-main.44e4354c.js",
     "static/css/2.786ae0dd.chunk.css",
     "static/js/2.6c7de523.chunk.js",
-    "static/css/main.e37036d5.chunk.css",
-    "static/js/main.4b6d8e47.chunk.js"
+    "static/css/main.0ae780eb.chunk.css",
+    "static/js/main.45daa190.chunk.js"
   ]
 }
