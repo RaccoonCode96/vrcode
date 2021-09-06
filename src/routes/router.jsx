@@ -8,7 +8,7 @@ import Study from './Study';
 
 const AppRouter = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={'/vrcode'}>
 			<section className="app">
 				<Header />
 				<Switch>
