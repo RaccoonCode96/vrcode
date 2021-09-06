@@ -1,5 +1,6 @@
 import racstagram_v1 from '../../images/racstagram_v1.gif';
 import racstagram_v2 from '../../images/racstagram_v2.gif';
+import vrcode from '../../images/visual_raccoon_code.gif';
 import paint from '../../images/paint_app.gif';
 import todoList from '../../images/todo_list.png';
 import ProjectLayout from '../Common/ProjectLayout';
@@ -9,6 +10,8 @@ import { ReactComponent as JsIcon } from '../../images/js_icon.svg';
 import { ReactComponent as CssIcon } from '../../images/css_icon.svg';
 import { ReactComponent as ReduxIcon } from '../../images/redux_icon.svg';
 import { ReactComponent as Firebase } from '../../images/firebase_icon.svg';
+import { Link } from 'react-router-dom';
+import { BugOutlined } from '@ant-design/icons';
 
 const Project = () => {
 	return (
@@ -32,11 +35,19 @@ const Project = () => {
 					</div>
 					<div className="project_cntr">
 						<ProjectLayout
+							img={vrcode}
+							title="VRCode"
+							desc="개발자가 자주보는 화면인 vscode 에디터 디자인의 포트폴리오를 만들어 보았습니다."
+							stacks={[ReactIcon]}
+						/>
+						<ProjectLayout
 							img={paint}
 							title="Paint-Up"
 							desc="기존 'Nomadcoder 강의'의 그림판 프로젝트에서 스스로 더 많은 기능을 추가한 프로젝트입니다."
 							stacks={[HtmlIcon, CssIcon, JsIcon]}
 						/>
+					</div>
+					<div className="project_cntr">
 						<ProjectLayout
 							img={todoList}
 							title="Romentum"
@@ -45,6 +56,12 @@ const Project = () => {
 						/>
 					</div>
 				</div>
+				<Link to={'/study'}>
+					<div className="move_to">
+						<BugOutlined className="move_to_icon" />
+						Study 보러가기
+					</div>
+				</Link>
 			</div>
 		</article>
 	);
