@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/vrcode/static/css/main.0ae780eb.chunk.css",
-    "main.js": "/vrcode/static/js/main.45daa190.chunk.js",
-    "main.js.map": "/vrcode/static/js/main.45daa190.chunk.js.map",
-    "runtime-main.js": "/vrcode/static/js/runtime-main.44e4354c.js",
-    "runtime-main.js.map": "/vrcode/static/js/runtime-main.44e4354c.js.map",
+    "main.css": "/vrcode/static/css/main.36c14381.chunk.css",
+    "main.js": "/vrcode/static/js/main.5c8aa871.chunk.js",
+    "main.js.map": "/vrcode/static/js/main.5c8aa871.chunk.js.map",
+    "runtime-main.js": "/vrcode/static/js/runtime-main.50d71f3b.js",
+    "runtime-main.js.map": "/vrcode/static/js/runtime-main.50d71f3b.js.map",
     "static/css/2.786ae0dd.chunk.css": "/vrcode/static/css/2.786ae0dd.chunk.css",
-    "static/js/2.6c7de523.chunk.js": "/vrcode/static/js/2.6c7de523.chunk.js",
-    "static/js/2.6c7de523.chunk.js.map": "/vrcode/static/js/2.6c7de523.chunk.js.map",
-    "static/js/3.2d911ca1.chunk.js": "/vrcode/static/js/3.2d911ca1.chunk.js",
-    "static/js/3.2d911ca1.chunk.js.map": "/vrcode/static/js/3.2d911ca1.chunk.js.map",
+    "static/js/2.184be031.chunk.js": "/vrcode/static/js/2.184be031.chunk.js",
+    "static/js/2.184be031.chunk.js.map": "/vrcode/static/js/2.184be031.chunk.js.map",
+    "static/js/3.778359f9.chunk.js": "/vrcode/static/js/3.778359f9.chunk.js",
+    "static/js/3.778359f9.chunk.js.map": "/vrcode/static/js/3.778359f9.chunk.js.map",
     "index.html": "/vrcode/index.html",
     "static/css/2.786ae0dd.chunk.css.map": "/vrcode/static/css/2.786ae0dd.chunk.css.map",
-    "static/css/main.0ae780eb.chunk.css.map": "/vrcode/static/css/main.0ae780eb.chunk.css.map",
-    "static/js/2.6c7de523.chunk.js.LICENSE.txt": "/vrcode/static/js/2.6c7de523.chunk.js.LICENSE.txt",
+    "static/css/main.36c14381.chunk.css.map": "/vrcode/static/css/main.36c14381.chunk.css.map",
+    "static/js/2.184be031.chunk.js.LICENSE.txt": "/vrcode/static/js/2.184be031.chunk.js.LICENSE.txt",
     "static/media/algoData_icon.4f0ec373.svg": "/vrcode/static/media/algoData_icon.4f0ec373.svg",
     "static/media/apollo_client.c581f602.svg": "/vrcode/static/media/apollo_client.c581f602.svg",
     "static/media/css_icon.b3c0acbf.svg": "/vrcode/static/media/css_icon.b3c0acbf.svg",
@@ -60,10 +60,10 @@
     "static/media/vue_icon.5e4385f4.svg": "/vrcode/static/media/vue_icon.5e4385f4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.44e4354c.js",
+    "static/js/runtime-main.50d71f3b.js",
     "static/css/2.786ae0dd.chunk.css",
-    "static/js/2.6c7de523.chunk.js",
-    "static/css/main.0ae780eb.chunk.css",
-    "static/js/main.45daa190.chunk.js"
+    "static/js/2.184be031.chunk.js",
+    "static/css/main.36c14381.chunk.css",
+    "static/js/main.5c8aa871.chunk.js"
   ]
 }
