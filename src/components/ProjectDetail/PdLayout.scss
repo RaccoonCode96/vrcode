@@ -17,6 +17,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	margin-bottom: 200px;
 	.pd_image {
 		max-width: 450px;
 		width: 100%;
@@ -38,6 +39,7 @@
 .pd_links {
 	display: flex;
 	gap: 10px;
+	flex-wrap: wrap;
 	.move_github {
 		font-size: 0.7rem;
 		font-weight: 600;
@@ -69,6 +71,28 @@
 		}
 		transition: 0.2s;
 		.blog_icon {
+			width: 11px;
+			height: 11px;
+		}
+	}
+
+	.move_website {
+		font-size: 0.7rem;
+		font-weight: 600;
+		border: none;
+		border-radius: 10px;
+		padding: 3px 10px;
+		background-color: $oc-grape-7;
+		color: $oc-gray-9;
+		&:hover {
+			color: $oc-gray-1;
+			.blog_icon {
+				fill: $oc-gray-1;
+				transition: 0.2s;
+			}
+		}
+		transition: 0.2s;
+		.website_icon {
 			width: 11px;
 			height: 11px;
 		}
