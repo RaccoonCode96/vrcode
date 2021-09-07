@@ -1,4 +1,4 @@
-import { GithubOutlined } from '@ant-design/icons';
+import { GithubOutlined, GlobalOutlined } from '@ant-design/icons';
 import { ReactComponent as Tistory } from '../../images/tistory.svg';
 import './PdLayout.scss';
 const PdLayout = ({
@@ -10,6 +10,7 @@ const PdLayout = ({
 	img,
 	functions,
 	stacks,
+	website,
 }) => {
 	return (
 		<article className="sub_content project">
@@ -34,6 +35,17 @@ const PdLayout = ({
 						>
 							<Tistory className="blog_icon" /> 블로그로 이동
 						</a>
+						{website && (
+							<a
+								href={website}
+								rel="noopener noreferrer"
+								target="_blank"
+								className="move_website"
+							>
+								<GlobalOutlined className="website_icon" />
+								배포 사이트
+							</a>
+						)}
 					</span>
 				</h3>
 				<div className="pds_cntr">
