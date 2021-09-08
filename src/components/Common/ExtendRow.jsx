@@ -2,6 +2,7 @@ import { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import './ExtendRow.scss';
 
+// Projects -> SideBar -> ProjectSide-> ExtendRow (아이콘 + 제목 + 설명 Row)
 const ExtendRow = ({ Icon, title, desc, style, input, url, active }) => {
 	// 검색 기능 함수
 	const check = useCallback((userInput, title) => {

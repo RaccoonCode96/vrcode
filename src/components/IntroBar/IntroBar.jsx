@@ -12,11 +12,14 @@ import { InfoCircleFilled } from '@ant-design/icons';
 import ContentRow from '../Common/ContentRow';
 import { useState } from 'react';
 
+// Home -> SideBar -(children)-> IntroBar (HomeSide 외부를 구성하는 기본 레이아웃)
 const IntroBar = ({ children }) => {
+	// component 폴더 On/Off
 	const [isOpen, setIsOpen] = useState(true);
 	const toggle = () => {
 		setIsOpen(!isOpen);
 	};
+
 	return (
 		<div className="sidebar_content">
 			<ContentRow

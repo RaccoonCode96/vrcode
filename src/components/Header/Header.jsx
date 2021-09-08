@@ -2,6 +2,7 @@ import './Header.scss';
 import { ReactComponent as VscodeIcon } from '../../images/vscode_icon.svg';
 import { ReactComponent as RestoreIcon } from '../../images/restore_icon.svg';
 import { CloseOutlined, LineOutlined } from '@ant-design/icons';
+// Router -> Header (최상단 vrcode 헤더)
 const Header = () => {
 	return (
 		<>

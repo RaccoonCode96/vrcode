@@ -1,5 +1,5 @@
 import './ContentRow.scss';
-
+// Home -> SideBar -> HomeSide -> ContentRow (아이콘 + 파일 이름 Row)
 const ContentRow = ({ onClick, Arrow, Icon, title, active, color }) => {
 	return (
 		<div

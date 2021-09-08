@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './ProjectLayout.scss';
 
+// Projects -> Project (main) -> ProjectLayout (프로젝트 사진 + 스택 아이콘 + 설명)
 const ProjectLayout = ({ img, desc, title, stacks }) => (
 	<Link to={`/project/${title}`} className="project_layout">
 		<div className="img_cntr">
