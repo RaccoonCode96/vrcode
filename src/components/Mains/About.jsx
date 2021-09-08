@@ -9,6 +9,7 @@ import { ReactComponent as StyledCmpt } from '../../images/styled_cmpt.svg';
 import { ReactComponent as MaterialUi } from '../../images/material_ui.svg';
 import { AntDesignOutlined } from '@ant-design/icons';
 
+// Home (Route) -> About (main)
 const About = () => (
 	<article className="sub_content about" id="about">
 		<div className="content">
@@ -16,7 +17,7 @@ const About = () => (
 			<h2 className="blue">📌 TaeYoung Kim / 김태영 </h2>
 			<h2 className="blue">'뭐가 더 좋을까?' 이유가 있는 개발자 🤔</h2>
 			<br />
-			<h3>작은 성공의 기록들을 모아 큰 성공을 지향합니다.</h3>
+			<h3 className="blue">작은 성공의 기록들을 모아 큰 성공을 지향합니다.</h3>
 			<p>
 				부동산학을 전공하고, 원하는 서비스를 만들고 싶어서 2020년 12월 22일 부터
 				현재 까지 개발자의 길을 걷고 있습니다.
@@ -35,7 +36,7 @@ const About = () => (
 				</b>
 			</p>
 			<br />
-			<h3>항상 고민하며 탐구하고 이유있는 선택을 합니다.</h3>
+			<h3 className="blue">항상 고민하며 탐구하고 이유있는 선택을 합니다.</h3>
 			<p>
 				시작부터 자신에게 맞는 것이 무엇인지 찾고자 항상 고민했습니다.
 				<br />
@@ -74,6 +75,17 @@ const About = () => (
 				</b>
 			</p>
 			<br />
+			<h3 className="blue">"어?.. 나 개발 좋아하네?"</h3>
+			<p>
+				😆 이 웹사이트는 제가 원하는 디자인, 기능 등이 들어간 저만의 포트폴리오
+				입니다. 내 머리속에 있는 자신만의 것을 직접 만든다고 하니 더 재미있었고
+				처음으로 자신이 생각하는 것 보다 "나 개발 좋아하네?"라는 느낌을
+				받았습니다
+				<b>
+					만들고 싶은 기능과 화면을 구현하면서 어느새 몰두하고 있는 저 자신을
+					발견했습니다.
+				</b>
+			</p>
 			<h3 className="blue">
 				이제는 혼자가 아닌 좋은 동료들과 함께 고민하고 해결하며
 				Synergy(시너지)를 내고 싶습니다.
