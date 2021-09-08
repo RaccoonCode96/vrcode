@@ -9,9 +9,12 @@ import { Tooltip } from 'antd';
 import { useLocation, useHistory } from 'react-router-dom';
 import './Navigation.scss';
 
+// each of Routes -> Navigation
 const Navigation = ({ children }) => {
 	const { pathname } = useLocation();
 	const history = useHistory();
+
+	// radio 특성상 controlled 되어야 해서 사용합니다.
 	const onChange = (path) => {
 		history.push(path);
 	};

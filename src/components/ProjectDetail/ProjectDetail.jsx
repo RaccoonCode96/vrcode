@@ -9,9 +9,14 @@ import useMoveTop from '../../hooks/useMoveTop';
 import todoList from '../../images/todo_list.png';
 import vrcode from '../../images/visual_raccoon_code.gif';
 
+// Projects (Route) -> ProjectDetail (main)
 const ProjectDetail = () => {
-	useMoveTop();
 	const { title } = useParams();
+
+	// Scroll top 이동 hook
+	useMoveTop();
+
+	// Data of pdLauout (각 현재 path에 맞는 데이터를 return)
 	const {
 		mainTitle,
 		subTitle,
@@ -150,6 +155,7 @@ const ProjectDetail = () => {
 				};
 		}
 	}, [title]);
+
 	return (
 		<>
 			<PdLayout

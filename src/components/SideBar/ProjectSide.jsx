@@ -1,5 +1,6 @@
 import { EllipsisOutlined } from '@ant-design/icons';
 
+// Projects -> SideBar -> ProjectSide
 const ProjectSide = ({ children, setInput, input }) => (
 	<>
 		<div className="active">

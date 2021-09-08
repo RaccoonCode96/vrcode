@@ -12,7 +12,9 @@ import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { SearchOutlined } from '@ant-design/icons';
 
+// Study (Route) -> StudyMain (main)
 const StudyMain = ({ isAllVisible }) => {
+	// Data of Study rows
 	const rowsData = useMemo(
 		() => [
 			[

@@ -1,5 +1,6 @@
 import { EllipsisOutlined } from '@ant-design/icons';
 
+// Study (Route) -> SideBar -> StudySide
 const StudySide = ({ children }) => (
 	<>
 		<div className="active">

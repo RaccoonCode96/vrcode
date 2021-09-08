@@ -1,6 +1,8 @@
 import { GithubOutlined, GlobalOutlined } from '@ant-design/icons';
 import { ReactComponent as Tistory } from '../../images/tistory.svg';
 import './PdLayout.scss';
+
+// Projects (Route) -> ProjectDetail (main) -> pdLayout
 const PdLayout = ({
 	title,
 	subTitle,

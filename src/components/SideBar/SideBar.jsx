@@ -6,6 +6,7 @@ import ProjectSide from './ProjectSide';
 import './SideBar.scss';
 import StudySide from './StudySide';
 
+// Navigation -> SideBar (각 path에 맞는 side 표시)
 const SideBar = ({ children, setInput, input }) => {
 	const { pathname } = useLocation();
 	const resSide = useCallback(() => {

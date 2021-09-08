@@ -1,6 +1,7 @@
 import './main.scss';
 import racoon from '../../images/raccoon.jpg';
 
+// Home (Route) -> Start (main)
 const Start = () => {
 	return (
 		<article className="sub_content start" id="start">

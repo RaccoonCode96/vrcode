@@ -1,6 +1,7 @@
 import './Tabs.scss';
 import { CloseOutlined } from '@ant-design/icons';
 
+// 상단에서 두번째 영역의 vrcode 작업표시줄 탭 (Tabs -> Tab)
 export const Tab = ({ Icon, title, active, color, type, href }) => {
 	return href ? (
 		<a
@@ -56,6 +57,7 @@ export const Tab = ({ Icon, title, active, color, type, href }) => {
 	);
 };
 
+// Tabs (상단에서 두번째 영역 vrcode 작업표시줄)
 const Tabs = ({ children }) => {
 	return <nav className="tabs">{children}</nav>;
 };

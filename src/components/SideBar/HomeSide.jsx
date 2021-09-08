@@ -4,6 +4,8 @@ import {
 	RightOutlined,
 } from '@ant-design/icons';
 
+// Home ( Route ) -> SideBar -> Intorbar -> HomeSide
+
 const HomeSide = ({ children }) => (
 	<>
 		<div className="active">
