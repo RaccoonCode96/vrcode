@@ -110,16 +110,15 @@
 				flex-direction: column;
 				align-items: center;
 
+				.familiar,
 				.interested {
-					margin-top: 40px;
-				}
-				.familiar {
 					margin-bottom: 50px;
 				}
 			}
 			.stacks_row {
 				display: flex;
 				gap: 30px;
+				margin-bottom: 15px;
 				.stack_item {
 					display: flex;
 					flex-direction: column;
