@@ -21,7 +21,9 @@ import StackLabel from '../Common/StackLabel';
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
+// Home (Route) -> Package (main) stack 담당
 const Package = () => {
+	// familiar stacks
 	const fStacks = useMemo(
 		() => [
 			[
@@ -50,16 +52,15 @@ const Package = () => {
 		],
 		[]
 	);
-	const tStacks = useMemo(
-		() => [
-			[NodeJs, 'NodeJS'],
-			[Express, 'Express'],
-			[TypeScript, 'TypeScript'],
-		],
-		[]
-	);
+
+	// interested stacks
 	const iStacks = useMemo(
 		() => [
+			[
+				[NodeJs, 'NodeJS'],
+				[Express, 'Express'],
+				[TypeScript, 'TypeScript'],
+			],
 			[
 				[MongoDb, 'MongoDB'],
 				[Graphql, 'GraphQL'],
@@ -93,18 +94,6 @@ const Package = () => {
 						))}
 					</div>
 					<div className="stack_cntr">
-						<h2 className="blue">I've Tried Once</h2>
-						<p>Not used at project</p>
-						<div className="stacks_row">
-							{tStacks.map((stack, i) => (
-								<StackLabel
-									key={`tItem${i}`}
-									Icon={stack[0]}
-									label={stack[1]}
-									style={stack[2] && stack[2]}
-								/>
-							))}
-						</div>
 						<h2 className="blue interested">Interested</h2>
 						{iStacks.map((stackRow, i) => (
 							<div key={`iRow${i}`} className="stacks_row">
