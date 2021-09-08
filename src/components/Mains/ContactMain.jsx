@@ -6,6 +6,7 @@ import { ReactComponent as Tistory } from '../../images/tistory.svg';
 import { ReactComponent as Location } from '../../images/location.svg';
 import { notification } from 'antd';
 
+// Contact (Route) -> ContactMain (main)
 const ContactMain = () => {
 	const getCopy = (type, value) => {
 		if (navigator.clipboard === undefined) {
