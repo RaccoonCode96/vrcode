@@ -92,7 +92,7 @@ const ProjectDetail = () => {
 					mainTitle: 'Paint-Up',
 					subTitle: '그림판 프로젝트',
 					img: paint,
-					desc: '기존 "Nomadcoder 강의"의 그림판 프로젝트에서 스스로 사각 툴, 굵기 연동 커서 등 더 많은 기능을 추가한 프로젝트입니다. JS를 처음 배웠을 때, 실제로 프로젝트를 만들고 기능을 추가하면서 개발에 대한 흥미를 높이며 더 많은 기술 탐구와 JS에 대한 이해에 대한 필요성을 느끼게 해주는 프로젝트 였습니다.',
+					desc: '기존 "Nomadcoder 강의"의 그림판 프로젝트에서 스스로 사각 툴, 굵기 연동 커서 등 더 많은 기능을 추가한 프로젝트입니다. JS를 처음 배웠을 때, 실제로 프로젝트를 만들고 기능을 추가하면서 개발에 대한 흥미를 높이며 더 많은 기술 탐구와 JS에 대한 이해의 필요성을 느끼게 해주는 프로젝트 였습니다.',
 					tistory: 'https://goforit.tistory.com/category/Paint-Up',
 					github: 'https://github.com/RaccoonCode96/paintjs_app',
 					functions: [
