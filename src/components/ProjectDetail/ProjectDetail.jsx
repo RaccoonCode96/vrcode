@@ -34,7 +34,7 @@ const ProjectDetail = () => {
 					mainTitle: 'Racstagram Ver2',
 					subTitle: '인스타그램 클론 Ver2',
 					img: racstagram_v2,
-					desc: '기존 인스타그램 클론 버전 1에 리팩토링 및 더 많은 기능을 더하기 위해서 redux를 도입하였습니다. 대표적으로 댓글, 좋아요, 무한스크롤, 유저 추천 기능과 디테일이 추가 되었습니다.',
+					desc: '기존 인스타그램 클론 버전 1에 리팩토링 및 더 많은 기능을 더하기 위해서 redux를 도입하였습니다. Redux의 많은 코드 작성 방식 때문에 Redux-Actions도 사용해 보았지만, 만족하지 못하여 최근에 나온 Redux-Toolkit을 활용하여 좀 더 효율적인 코드 양으로 개발을 진행하였습니다. 특히 사용자 관점에서 접근하여 "무한 스크롤의 스크롤 위치 기억" 과 "좋아요 기능만의 렌더링"을 위해서 상태관리 코드를 구상하고 프로젝트로 완성했습니다.  Front-End 뿐만 아니라 Firebase의 DB를 통해 data를 어떻게 구축하고 관리할지 고민하고 프로젝트를 만들었습니다.',
 					github: 'https://github.com/RaccoonCode96/redux_racstagram',
 					tistory: 'https://goforit.tistory.com/category/Racstagram_V2',
 					functions: [
@@ -51,6 +51,8 @@ const ProjectDetail = () => {
 						['유저 프로필 화면의 이미지 테이블', 'blue'],
 						['유저 프로필 화면의 작성자 게시글 수', 'blue'],
 						['무한 스크롤(Intersection Observer)', 'blue'],
+						['스크롤 위치 기억& 무한스크롤 초기화 방지', 'blue'],
+						['이미지 파일 크기 리사이징', 'blue'],
 						['Input Validation', 'blue'],
 						['더 좋아진 반응형 스타일', 'blue'],
 					],
@@ -69,7 +71,7 @@ const ProjectDetail = () => {
 					mainTitle: 'Racstagram Ver1',
 					subTitle: '인스타그램 클론 Ver1',
 					img: racstagram_v1,
-					desc: '트위터 만들기 강의를 듣고 인스타그램으로 재편성 한 프로젝트 입니다.',
+					desc: '트위터 만들기 강의를 듣고 인스타그램으로 재편성한 초창기 모델로, context API 없이 firebase의 간단한 로그인, 가입을 구현하고, 게시글의 CRUD에 익숙해졌습니다. 하지만, 복잡한 상태 관리와 prop 전달로 인해 더 많은 지식이 필요함을 느꼈습니다.',
 					github: 'https://github.com/RaccoonCode96/rastagram',
 					tistory: 'https://goforit.tistory.com/category/Racstagram_V1',
 					functions: [
@@ -90,7 +92,7 @@ const ProjectDetail = () => {
 					mainTitle: 'Paint-Up',
 					subTitle: '그림판 프로젝트',
 					img: paint,
-					desc: '그림판 만들기 강의를 듣고 더 나아가서 스스로 사각 툴, 굵기 연동 커서 등을 구현하였습니다.',
+					desc: '기존 "Nomadcoder 강의"의 그림판 프로젝트에서 스스로 사각 툴, 굵기 연동 커서 등 더 많은 기능을 추가한 프로젝트입니다. JS를 처음 배웠을 때, 실제로 프로젝트를 만들고 기능을 추가하면서 개발에 대한 흥미를 높이며 더 많은 기술 탐구와 JS에 대한 이해에 대한 필요성을 느끼게 해주는 프로젝트 였습니다.',
 					tistory: 'https://goforit.tistory.com/category/Paint-Up',
 					github: 'https://github.com/RaccoonCode96/paintjs_app',
 					functions: [
