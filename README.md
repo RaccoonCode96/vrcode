@@ -8,6 +8,9 @@ FE 개발자를 준비하면서, 포트폴리오 페이지를 만들었습니다
 
 일단은, 포트폴리오를 목적으로 만들었지만 더 확장시켜 나중에는 해당 스타일을 블로그로 만들려고 합니다.
 
+
+정적인 페이지임으로 재미를 주기 위해서 sidebar에 각 페이지에 맞는 기능들을 넣었습니다. 개인 포트폴리오도 하나의 프로젝트로서 기능을 추가하면서 배운것이 많았습니다.
+
 <br/>
 
 ## 기간
@@ -23,6 +26,7 @@ visual studio code의 디자인을 아이디어로 필명인 RaccoonCode(라쿤�
 ## 배포 사이트
 
 [포트폴리오 구경하기](https://raccooncode96.github.io/vrcode/)
+[해당 프로젝트 개발 블로그 글](https://goforit.tistory.com/219)
 
 <br/>
 
@@ -31,28 +35,25 @@ visual studio code의 디자인을 아이디어로 필명인 RaccoonCode(라쿤�
 <img src="./src/images/visual_raccoon_code.gif" width="600px" alt="img_vrcode">
 
 <br/>
-<br/>
-<br/>
 
-## 기능
+## 주요 기술
 
-- project 사이드바의 검색 기능
-- study 페이지의 각 항목 설명 더 보기 기능
-- Contact 페이지의 전화번호, 이메일 클릭시 클립보드 복사 기능
-- 반응형 스타일
+- React
+- SCSS
+- AntDesign
 
-<br/>
-<br/>
-<br/>
+## 주요 기능
 
-## 사용한 기술
+- 모바일 환경을 고려한 반응형 스타일
+- 짧게 생략된 설명 더 보기 기능
+- Project 제목 검색을 통한 Project 링크 보기 (부분 검색 기능)
+- Contact 이메일, 전화번호 클립보드 복사 기능
 
-포트폴리오 페이지의 경우 정적인 페이지이기 때문에, server 구성 없이 단순히 client만 만들어서 github page로 배포하였습니다.
+## 느낀점
 
-- React, CRA
-- Ant Design
-- Scss (sass는 node-sass 보다 차후에 dart-sass 지원만 할 예정이기에 기본 sass로 채택)
-- github page
+- AntDesign 툴을 사용해 보면서 Material UI 보다 직관적인 사용 방법과 간결한 UI가 매력적인 라이브러리임을 느꼈습니다.
+- 프로젝트를 통해서 머릿속에 있는 자신만의 기획, 디자인, 기능 등을 실체화시키는 좋은 경험이었습니다.
+- Clipboard API를 사용하면서, Web API의 기능이 많이 발전하고 있고 브라우저가 점점 강력해 지는 것을 느꼈습니다.
 
 <br/>
 <br/>
